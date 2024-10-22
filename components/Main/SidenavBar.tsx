@@ -7,6 +7,7 @@ interface IconItem {
   name: string;
   link: string;
   icon: React.ComponentType<{ className?: string }>;
+  color: string;
 }
 
 const SidenavBar: React.FC = () => {
@@ -15,40 +16,44 @@ const SidenavBar: React.FC = () => {
       name: "Resume",
       link: "./Resume.pdf",
       icon: FaFileDownload,
+      color: "text-red-500",
     },
     {
       name: "LinkedIn",
       link: "https://www.linkedin.com/in/ajay-kota/",
       icon: FaLinkedin,
+      color: "text-blue-800",
     },
     {
       name: "Github",
       link: "https://github.com/spidersnipero",
       icon: FaGithub,
+      color: "text-gray-900",
     },
     {
       name: "Medium",
       link: "https://medium.com/@ajaykota2003",
       icon: FaMedium,
+      color: "text-gray-900",
     },
   ];
 
   return (
-    <div className="fixed right-10 bottom-32 z-20">
-      <div className="flex flex-col items-center">
+    <div className="fixed z-20 sm:right-10 sm:bottom-32 bottom-0 w-full sm:w-auto bg-white sm:bg-transparent">
+      <div
+        className={`flex sm:flex-col flex-row items-center justify-center sm:items-end ${
+          list.length > 1 ? "sm:gap-3 gap-6" : ""
+        } py-3 sm:py-0`}
+      >
         {list.map((item) => (
           <motion.div
             whileHover={{ scale: 1.3 }}
             key={item.name}
-            className="relative bg-gray-200 rounded-full p-2 mb-3  "
+            className="relative bg-gray-200 rounded-full p-2 mb-0 sm:mb-3"
           >
             <Link href={item.link}>
               <item.icon
-                className={`text-2xl text-gray-500 ${
-                  item.name == "LinkedIn"
-                    ? "hover:text-blue-800"
-                    : "hover:text-zinc-900"
-                }`}
+                className={`text-2xl text-gray-500 ${item.color} cursor-pointer`}
               />
             </Link>
           </motion.div>

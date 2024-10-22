@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "@/components/Required/Image";
-import { Montserrat, Inter } from "next/font/google";
+import { Montserrat } from "next/font/google";
 
 const moss = Montserrat({
   weight: "400",
@@ -10,27 +10,25 @@ const moss = Montserrat({
 
 const About = () => {
   return (
-    <div className="">
-      <div className=" flex  items-center max-sm:flex-col justify-around    ">
+    <div className="px-4 sm:px-10">
+      <div className="mt-10 flex items-center justify-around flex-col md:flex-row md:space-x-8">
         <Image />
-        <div className="">
-          <div className="">
-            <p className="text-xl ">Hey , I'm </p>
+        <div className="text-center md:text-left mt-6 md:mt-0">
+          <div className="mb-2">
+            <p className="text-xl">Hey, I'm</p>
           </div>
-          <div className="max-sm:px-10">
-            <h1
-              className={` ${moss.className} px-auto md:text-6xl text-4xl font-bold`}
-            >
-              Amelia Rodriguez
+          <div>
+            <h1 className={`${moss.className} text-4xl md:text-6xl font-bold`}>
+              Ajay Kota
             </h1>
           </div>
         </div>
       </div>
-      <div className={` max-sm:mt-4 md:mt-10 max-sm:justify-center`}>
-        <h1 className="text-4xl">About Me</h1>
-        <p
-          className={`md:indent-8 md:mt-4 max-sm:indent-4 max-sm:mt-2 mt-4 font-3xl`}
-        >
+      <div className="mt-8 md:mt-10">
+        <h1 className="text-3xl md:text-4xl font-bold text-center md:text-left">
+          About Me
+        </h1>
+        <p className="mt-4 md:mt-6 text-lg md:text-xl leading-relaxed indent-4 md:indent-8">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
           odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla
           quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent

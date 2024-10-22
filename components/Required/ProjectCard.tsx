@@ -16,7 +16,7 @@ type ProjectCardProps = {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   return (
-    <div className="max-w-2xl rounded-t-xl overflow-hidden shadow-lg hover:shadow-2xl mx-auto relative">
+    <div className="max-w-2xl   my-10 rounded-t-xl overflow-hidden shadow-lg hover:shadow-2xl mx-auto relative">
       <img
         className="w-full  object-cover"
         src={project.image}

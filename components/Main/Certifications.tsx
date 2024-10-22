@@ -1,4 +1,3 @@
-// pages/index.js
 import CertificateCard from "../Required/CerticationBox";
 
 const certificates = [
@@ -6,23 +5,25 @@ const certificates = [
     title: "The Complete Web Developer: Zero To Mastery",
     provider: "Udemy",
     description:
-      "Certification earners demonstrate a robust grasp of web development, excelling in HTML, CSS, JavaScript, and contemporary frameworks. Equipped with hands-on experience in cutting-edge technologies, these certificate holders are well-prepared to address real-world web development challenges.",
-    date: "Jul 2023",
+      "The Complete Web Developer: Zero To Mastery certificate has been incredibly valuable in my journey. It equipped me with the essential skills to build modern, responsive websites and applications from scratch. This course gave me the confidence to tackle real-world projects and advance my web development career",
+    date: "Jan 2024",
   },
   {
-    title: "Oracle Database Developer Certified Professional",
-    provider: "Oracle",
+    title: "AWS Cloud Practitioner",
+    provider: "AWS",
     description:
-      "Certification earners demonstrate advanced proficiency in PL/SQL for Oracle Database. Their skills encompass crafting efficient triggers, developing stored procedures, and managing complex data structures. This certification validates their ability to optimize SQL statements for enhanced performance and implement robust security measures. With this expertise, individuals showcase their capability to design and manage database applications effectively, positioning themselves as valuable assets in Oracle Database development.",
-    date: "Nov 2023",
+      "Earning the AWS Certified Cloud Practitioner certification has helped me gain a solid understanding of AWS cloud services and best practices. It boosts my credibility with foundational cloud knowledge, making me more effective in IT and cloud-related roles. This certification opens up new opportunities for career growth in the cloud industry.",
+    date: "Jul 2024",
   },
 ];
 
 export default function Home() {
   return (
-    <div className="container mx-auto p-4">
-      <h1 className="text-4xl flex justify-center">Certifications</h1>
-      <div className="relative mt-10">
+    <div className="container mx-auto px-4 py-8">
+      <h1 className="text-3xl md:text-4xl font-bold text-center">
+        Certifications
+      </h1>
+      <div className="grid grid-cols-1 gap-8 mt-8">
         {certificates.map((certificate, index) => (
           <CertificateCard key={index} certificate={certificate} />
         ))}
