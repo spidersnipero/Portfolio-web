@@ -29,15 +29,13 @@ const About = () => {
           About Me
         </h1>
         <p className="mt-4 md:mt-6 text-lg md:text-xl leading-relaxed indent-4 md:indent-8">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
-          odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla
-          quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent
-          mauris. Fusce nec tellus sed augue semper porta. Mauris massa.
-          Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad
-          litora torquent per conubia nostra, per inceptos himenaeos. Curabitur
-          sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur
-          tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor.
-          Maecenas mattis. Sed convallis tristique sem.
+          I'm a passionate Full Stack Developer with a knack for bringing web
+          applications to life. With a background in React, Next.js, and
+          Node.js, I enjoy tackling challenges and creating robust,
+          user-friendly applications. Driven by curiosity, I'm always
+          experimenting with new frameworks and libraries, constantly expanding
+          my skill set. I'm on the lookout for exciting projects where I can
+          contribute, grow, and make a meaningful impact through code.
         </p>
       </div>
     </div>
