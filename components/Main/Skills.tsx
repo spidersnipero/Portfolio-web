@@ -12,29 +12,30 @@ const Skills = () => {
       level: 4,
     },
     {
+      skill: "Java",
+      level: 4,
+    },
+    {
       skill: "TailwindCSS",
       level: 3,
     },
     {
-      skill: "Next.js",
-      level: 3,
-    },
-    {
-      skill: "Flutter",
-      level: 3,
-    },
-    {
-      skill: "PosgreSQL",
+      skill: "SQL",
       level: 3,
     },
     {
       skill: "TypeScript",
       level: 2,
     },
+    {
+      skill: "Next.js",
+      level: 2,
+    },
   ];
 
   const LowSkills = [
     "Git",
+    "Spring Boot",
     "Node.js",
     "Redux",
     "Java",

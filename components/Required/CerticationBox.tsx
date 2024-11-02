@@ -17,8 +17,10 @@ const CertificateCard: React.FC<CertificateCardProps> = ({ certificate }) => {
   return (
     <div className="relative flex items-center py-3">
       {/* Vertical line - hidden on small screens */}
-      <div className="h-full w-4 absolute inset-0 flex justify-center items-center sm:flex hidden">
-        <div className="h-full w-0.5 bg-gray-500 pointer-events-none"></div>
+      <div className="sm:block hidden">
+        <div className="h-full w-4 absolute inset-0 flex justify-center items-center ">
+          <div className="h-full w-0.5 bg-gray-500 pointer-events-none"></div>
+        </div>
       </div>
 
       {/* Dot - hidden on small screens */}
